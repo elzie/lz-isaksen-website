@@ -1,0 +1,43 @@
+@media screen and (min-width: 1300px) {
+    #Bread{
+        width:1250px;
+        margin: 0 auto;
+    }
+    #Bread a{
+        font-size: 0.9rem;
+        color: #000;
+        text-decoration: none;
+    }
+    #Bread span{
+        font-size: 0.9rem;
+        margin:0 1rem;
+        font-family: 'Inter', sans-serif;
+    }
+    #Bread .current{
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 900px) {
+    #Bread{
+        width:100%;
+        margin: 0 auto;
+    }
+    #Bread a{
+        font-size: 0.9rem;
+        color: #000;
+        text-decoration: none;
+    }
+    #Bread span{
+        font-size: 0.9rem;
+        margin:0 1rem;
+        font-family: 'Inter', sans-serif;
+    }
+    #Bread .current{
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+}

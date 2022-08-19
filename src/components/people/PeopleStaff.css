@@ -1,0 +1,90 @@
+.listItem {
+  /* width: calc(100%/2 - 0.5rem); */
+  width: 100%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  background: #eef0f3;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.listItemClear {
+  width: calc(100% / 2);
+}
+
+.listItem:nth-child(odd) {
+  margin-right: 1rem;
+}
+
+.listItem div {
+  position: absolute;
+  background: #223555;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  z-index: 1;
+  transition: all 0.3s linear;
+}
+
+.listItem:hover div,
+.listItem.selected div {
+  right: 0;
+}
+
+.listItem button {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 0;
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.listItem button i {
+  display: inline-block;
+  vertical-align: middle;
+  background: #223555;
+  color: #fff;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 0.2rem;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  transition: all 0.3s linear;
+}
+
+.listItem:hover button i,
+.listItem.selected button i {
+  background: #fff;
+  color: #223555;
+  transform: rotateY(180deg);
+}
+
+.listItem button p {
+  width: calc(100% - 2.5rem);
+  display: inline-block;
+  vertical-align: middle;
+  color: #223555;
+  margin-left: 1rem;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  line-height: 0.9rem;
+}
+
+.listItem:hover button p,
+.listItem.selected button p {
+  color: #fff;
+}
